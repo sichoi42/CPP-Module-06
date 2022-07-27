@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 00:17:14 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/27 14:12:14 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/27 14:24:31 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define CONVERSION_HPP
 
 # include <iostream>
-# include <sstream>
 # include <exception>
 # include <cmath> // std::isnan std::isinf
 # include <cctype> // std::isprint
