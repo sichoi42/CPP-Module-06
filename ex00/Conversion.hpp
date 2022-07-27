@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 00:17:14 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/27 01:10:24 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/27 14:12:14 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ class Conversion
 	private:
 		std::string	_input;
 		double		_value;
+		char		*_type;
+		bool		_error;
 
 		Conversion(void);
 
@@ -33,10 +35,17 @@ class Conversion
 		Conversion(const Conversion& con);
 
 		Conversion&	operator=(const Conversion& con);
-		void		stoc(void) const;
-		void		stoi(void) const;
-		void		stof(void) const;
-		void		stod(void) const;
+		char		stoc(void) const;
+		int			stoi(void) const;
+		float		stof(void) const;
+		double		stod(void) const;
+		void		printChar(void) const;
+		void		printInt(void) const;
+		void		printFloat(void) const;
+		void		printDouble(void) const;
+		bool		getError(void) const;
 };
+
+std::ostream&	operator<<(std::ostream& o, const Conversion& con);
 
 #endif

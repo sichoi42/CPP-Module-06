@@ -6,11 +6,11 @@
 #    By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/21 18:35:07 by sichoi            #+#    #+#              #
-#    Updated: 2022/07/27 00:17:04 by sichoi           ###   ########.fr        #
+#    Updated: 2022/07/27 13:14:28 by sichoi           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = conversion
+NAME = scalar
 
 CC = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -MD
