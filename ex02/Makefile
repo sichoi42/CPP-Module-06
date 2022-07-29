@@ -6,7 +6,7 @@
 #    By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/21 18:35:07 by sichoi            #+#    #+#              #
-#    Updated: 2022/07/27 15:08:49 by sichoi           ###   ########.fr        #
+#    Updated: 2022/07/29 22:51:52 by sichoi           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,6 @@ RESET = \033[0m
 CHECK = \033[0;32m\xE2\x9C\x94\033[0m
 
 FUNC = main\
-		Random\
 
 
 SRC = $(addsuffix .cpp, $(FUNC))

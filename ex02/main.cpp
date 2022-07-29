@@ -6,19 +6,20 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 14:25:38 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/27 15:53:00 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/29 22:58:32 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "A.hpp"
 #include "B.hpp"
 #include "C.hpp"
-#include "Random.hpp"
+#include <stdlib.h>
+#include <time.h>
 #include <iostream>
 
 Base	*generate(void)
 {
-	double r = Random::randr(0, 1);
+	double r = static_cast<double>(rand() % 101) / 100;
 	if (r <= static_cast<double>(1) / 3)
 		return (new A());
 	else if (r <= static_cast<double>(2) / 3)
@@ -94,6 +95,7 @@ void	test2(void)
 
 int	main(void)
 {
+	srand(time(NULL));
 	test1();
 	// test2();
 	// system("leaks identify");

@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 14:25:38 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/27 14:46:17 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/29 22:32:31 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,12 +42,9 @@ int	main(void)
 	d->data = 42;
 	d->name = "sichoi";
 	p = serialize(d);
-	std::cout << GREEN << d->data << " " << d->name << RESET << std::endl;
-	std::cout << p << std::endl;
-	std::cout << &d << std::endl;
 	d = deserialize(p);
-	std::cout << p << std::endl;
-	std::cout << &d << std::endl;
+	std::cout << "p: " << "0x" << std::hex << p << std::dec << std::endl;
+	std::cout << "d: " << d << std::endl;
 	std::cout << GREEN << d->data << " " << d->name << RESET << std::endl;
 	delete d;
 	// system("leaks serialization");
